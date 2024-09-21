@@ -44,8 +44,10 @@ function Header() {
     <DropdownMenuLabel>{user?.user_metadata?.name}</DropdownMenuLabel>
     <DropdownMenuSeparator />
     <DropdownMenuItem className="cursor-pointer">
+      <Link to="/dashboard" className='flex'>
         <LinkIcon  className='mr-2 h-4 w-4' />
         My links
+        </Link>
         </DropdownMenuItem>
     <DropdownMenuItem className="text-red-400 cursor-pointer">
         <LogOut className='mr-2 h-4 w-4' />
