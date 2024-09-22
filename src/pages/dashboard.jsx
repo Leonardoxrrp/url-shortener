@@ -30,13 +30,9 @@ function Dashboard() {
     fnUrls()
   }, [])
 
-  console.log(urls, clicks, "x")
-
   useEffect(() => {
     if (urls?.length) fnClicks()
   }, [urls?.length])
-
-  console.log(urls, "urls")
 
   const filteredUrls = urls?.filter((url) =>
     url.title.toLowerCase().includes(searchQuery.toLowerCase()),

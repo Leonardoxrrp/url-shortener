@@ -124,7 +124,7 @@ function CreateLink() {
         {errors.longUrl && <Error message={errors.longUrl} />}
 
         <div className="flex items-center gap2">
-          <Card className="p-2">leonardo.fyi</Card>
+          <Card className="p-2">{window.location.origin}</Card>
           <span className="p-1">/</span>
           <Input
             value={formValues.customUrl}

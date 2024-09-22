@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
-import { LinkIcon, LogOut } from "lucide-react"
+import { Linkedin, LinkIcon, LogOut } from "lucide-react"
 import { UrlState } from "@/context"
 import useFetch from "./hooks/use-fetch"
 import { logout } from "@/db/apiAuth"
@@ -22,13 +22,13 @@ function Header() {
 
   const { loading, fn: fnLogout } = useFetch(logout)
 
-  console.log(user, "user")
-
   return (
     <>
       <nav className="py-4 flex justify-between items-center">
         <Link to="/">
-          <h3>logo here</h3>
+          <h3>
+            <Linkedin />
+          </h3>
         </Link>
         {!user ? (
           <Button onClick={() => navigate("/auth")}>Login</Button>
