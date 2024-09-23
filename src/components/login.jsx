@@ -76,7 +76,6 @@ function Login() {
     <Card>
       <CardHeader>
         <CardTitle>Login</CardTitle>
-        <CardDescription>Card Description</CardDescription>
         {error && <Error message={error} />}
       </CardHeader>
       <CardContent className="space-y-2">

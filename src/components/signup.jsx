@@ -80,7 +80,6 @@ function Signup() {
     <Card>
       <CardHeader>
         <CardTitle>Signup</CardTitle>
-        <CardDescription>Card Description</CardDescription>
         {error && <Error message={error} />}
       </CardHeader>
       <CardContent className="space-y-2">
